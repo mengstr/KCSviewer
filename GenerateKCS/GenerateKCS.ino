@@ -1,3 +1,12 @@
+//
+// Generates a Kansas City Standard compatible audio output
+// on the selected PWM pin.
+//
+// This is part of the KCSviewer repo at https://github.com/SmallRoomLabs/KCSviewer
+// for the RetroChallenge 2018/09 competition
+//
+//
+
 #define REFCLK (16000000.0/510.0)
 
 

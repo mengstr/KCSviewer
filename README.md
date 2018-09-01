@@ -46,3 +46,24 @@ The startbit detector will trigger (or resynchronize?) the oscillator that runs 
 
 When all eight bits are shifted into the shiftregister it needs to be latched and a strobe pulse should be asserted. (This is not shown in the diagram above)
 
+---
+
+Sep 01 - Simulating the tape
+
+I recently got hold of a working casette tape deck, but it will be a bit of a hassle to use that during development so I made an Arduino sketch that outputs any FSK bit sequence I need.
+
+The Arduino doesn't have any analog out so it's emulated with a PWM followed by a simple lowpass filter to get rid of most of the PWM frequency.
+
+![Lowpass filter schematic](Images/FilterSchematics.png?raw=true)
+
+I just soldered it up directly between a pinheader and a screw terminal.  The pinheader connects to GND, D2 and D3 which conveniently are located next to each other on a Nano.  D3 is used for the PWM and D2 is a reference output of the zeros and ones sent on the audio stream. This makes it easy to see what data bit that is actually being sent and how it passes through the circuit.
+
+![Built lowpass filter ](Images/Filter.png?raw=true)
+
+After writing some quick and dirty code (what else can be done using an Ardunio? ^__^ ) the output of a few bits looks like this
+
+![Oscilloscope image of the simulated FSK](Images/ArduinoOutput1.png?raw=true)
+
+The code is available at [GenerateKCS](https://github.com/SmallRoomLabs/KCSviewer/tree/master/GenerateKCS)
+
+---
