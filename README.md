@@ -48,7 +48,7 @@ When all eight bits are shifted into the shiftregister it needs to be latched an
 
 ---
 
-Sep 01 - Simulating the tape
+# Sep 01 - Simulating the tape
 
 I recently got hold of a working casette tape deck, but it will be a bit of a hassle to use that during development so I made an Arduino sketch that outputs any FSK bit sequence I need.
 
