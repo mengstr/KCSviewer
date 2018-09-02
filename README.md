@@ -69,3 +69,59 @@ The code is available at [GenerateKCS](https://github.com/SmallRoomLabs/KCSviewe
 As can be seen the lowpass filter isn't the best since the 2400 Hz of the ones are getting attenuated a bit more than I had wished for, but it's good enough for the time being.  Maybe I'll make a steeper filter with a bit higher center frequency someday, we'll see....
 
 ---
+
+# Sep 02 - FSK→UART
+
+### Design & Schematics 
+
+The first part of the process to convert the FSK-audio into a plain UART-like serial stream would be to shape it up into a nice square wave with full swing between GND and VCC.
+
+I'm sure there's many ways of doing this, but I just made a long tailed differential amplifier with the second side fixed to the same bias voltage as is set on the fist side.  This basically makes it into a comparator. Maybe some hysteresis would be a good thing to have as well, but I'll leave that out for the time being.
+
+The now digital output (DIGITAL in the schematic) is used as a trigger for a monostable set at 300us.  The 300us is longer than the 2400Hz pulse width so while 2400Hz is present the monoflop will continuously be re-triggered and will never time out.  As soon as the input frequency changes to 1200Hz the timer will timeout and thus output a pulse before the next re-trigger some 10's of microseconds later.
+
+At this point (LONGS in the schematic) there will be a pulse train whenever 1200Hz is present and a steady level whenever 2400Hz is present.
+
+If this is fed into another monostable set at a even longer timeout (1100us) then the pulses in the pulse train will re-trigger the monostable and keep it active as long as the pulses are available.
+
+The output from this last monostable is a plain and simple UART serial stream.
+
+![Schematics of the Audio-to-Serial converter](Images/Audio_Serial-Schematics.png?raw=true)
+
+### Prototype
+
+I first built this on a solderless breadboard to verify my previous LTspice simulations. It worked like a charm!
+
+![Breadboard of the Audio-to-Serial converter](Images/Audio_Serial-Breadboard.jpg?raw=true)
+
+### PCB
+
+Lately I've started to actually plan and design whenever I solder something on veroboard or donut-boards.  For this I use [DiyLC](http://diy-fever.com/software/diylc/)
+
+So after a bit of trying out a few different layouts I came up with this design.
+
+![Layout of the Audio-to-Serial converter PCB](Images/Audio_Serial-Layout.png?raw=true)
+
+I find it easier to follow the layout during soldering if I first mark the tracks-to-be on the top with a pen like this:
+
+![Tracks on the Audio-to-Serial converter PCB](Images/Audio_Serial-PCB-empty.jpg?raw=true)
+
+After this it's easy enough to just plonk down the parts, bend the component leads at the bottom in the right directions and solder&snip.
+
+![Soldered Audio-to-Serial converter PCB](Images/Audio_Serial-PCB-built.jpg?raw=true)
+
+### Testing
+
+Feeding it a short FSK sequence from the Arduino KCS simulator I built/wrote yesterday it looks very good.
+
+![Audio-to-Serial converter oscilloscope curves](Images/Audio_Serial-Oscilloscope.png?raw=true)
+
+On the top in orange color we have the AUDIO input starting out at a (slightly attenuated) 2400 Hz followed by four cycles of 1200Hz, eight cycles 2400 and then some more 1200.
+
+The next trace is the green DIGITAL output from the comparator.
+
+The yellow trace is the LONGS pulse train from the output of the first 300us monostable.
+
+And finally the blue trace which is the SERIAL output from the second 1100us monostable.
+
+---

@@ -1,1 +1,2 @@
 Online Graphical editor  https://designer.gravit.io
+Vero/Breadboard designer http://diy-fever.com/software/diylc/
