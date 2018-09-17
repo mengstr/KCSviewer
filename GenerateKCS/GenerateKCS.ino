@@ -45,7 +45,16 @@ const uint8_t sine256[]  = {
 };
 
 
-const uint8_t bits[]  = {0, 1, 0, 0, 0, 0, 0, 0, 0};
+//const uint8_t bits[]  = {0, 1, 0, 0, 0, 0, 0, 0, 0};  // Short for testing the Audio->Serial pcb
+
+const uint8_t bits[]  = {           // For startbit detection
+  0,  1, 0, 1, 0, 1, 0, 1, 0,   1,
+  0,  0, 0, 0, 0, 0, 0, 0, 0,   1,
+  0,  1, 1, 1, 1, 1, 1, 1, 1,   1,
+  0,  1, 1, 1, 1, 1, 1, 1, 1,   1,1,1,1,1,
+  0,  1, 1, 1, 0, 0, 1, 1, 1,   1
+};
+
 uint8_t sequencelength = sizeof(bits);
 
 volatile uint16_t bitp = IDLE;
@@ -59,6 +68,7 @@ void setup() {
 
   pinMode(PWMPIN, OUTPUT);     // PWM pin for OCR2B
   pinMode(BITPIN, OUTPUT);
+  pinMode(LED_BUILTIN, OUTPUT);
 
   // Timer2 Clock Prescaler to /1
   sbi (TCCR2B, CS20);
@@ -72,7 +82,7 @@ void setup() {
   cbi (TCCR2A, COM2B0);  // Clear the Compare Match
   sbi (TCCR2A, COM2B1);
 
-  
+
   sbi (TCCR2A, WGM20);  // Mode 1, Phase correct PWM
   cbi (TCCR2A, WGM21);
   cbi (TCCR2B, WGM22);
@@ -98,8 +108,10 @@ void Delay1ms() {
 //
 void loop() {
   while (bitp != IDLE);
-  for (uint8_t i = 0; i < 100; i++) Delay1ms();
+  digitalWrite(LED_BUILTIN, LOW);  
+  for (uint16_t i = 0; i < 1000; i++) Delay1ms();
   bitp = 0;
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on 
 }
 
 //
@@ -134,3 +146,4 @@ ISR(TIMER2_OVF_vect) {
       }
     }
   } else firstcycle = true;
+}

@@ -125,3 +125,95 @@ The yellow trace is the LONGS pulse train from the output of the first 300us mon
 And finally the blue trace which is the SERIAL output from the second 1100us monostable.
 
 ---
+
+## Sep 17 - Baud clock & Ring counter
+
+No noes! Real life happened and made me work basically around the clock for two weeks, but now I got some breathing room to play with my #retrochallenge project for a bit again. 
+
+### Done this time
+
+I was running out of 2.2k resistors and also started to get log on NPN's in TO-92 so I ordered 500 each of 2k2 and 10k plus a hundred each of NPN & PNP transistors. I hope they will not run out while doing this project..
+
+![More parts](Images/MoreParts.jpg?raw=true)
+
+My original plan was to do the startbit detection mono- and flipflops, but I realized that I needed the ring counter first in order to test that part of the design.  So I went ahead with the clock generator, ring-bias and ring-stages this week.
+
+![Block diagram of the Clock/Bias/Ring modules](Images/RingCounter_Clock_Bias-Block.png?raw=true)
+
+
+### Baudrate generator
+
+In order to be able to collect the bits as they come in at 300 bits per second I need a 300Hz clock pulse that can be synched to the leading edge of the startbit. Without the syncing the sample point might end up anywhere in each bitslot and we want to sample as close to the middle as possible to have as much margin as possible if the playback tape speed is a tad slower or faster than the recording tape deck. Also the frequency of the clock generator here will vary a bit in response to the temperature.
+
+A regular UART-chip usually have a clock that is 16 times the bit rate so it can digitally select the correct number of clock pulses to wait before reaching the mid-point, and they can also make multiple samples in each bit to ignore glitches.  That is fine and dandy when you do it digitally and can use huge number of transistors inside the chip, but this project is more of less analog and have to be a bit frugal on the parts count so something else has to be done.
+
+The idea is to have the clock generator stopped until a flipflop is "set" by the rising edge of the startbit in the serial bitstream.  When the flipflop is set then the clock generator is started and will be free-running until all data bits are collected. At the stopbit the flipflop will be "reset" and the clock will be stopped.
+
+The clock circuit looks like this:
+
+![Schematics of the Clock generator](Images/Clockgen-Schematics.png?raw=true)
+
+The C1 and the resistors R8 and R9 (together with D1 ) controls the frequency as well as the pulse width ratio.  The diode makes sure that only the charging cycle of C1 will be affected by the low resistance of R9 (making it fast).  The discharge will be done thru the much higher resistance of R8 making it slow.
+
+This gives me pulses at 300 Hz with a very short low-going output that will be used to advance the ring counter one step.
+
+
+The RESET/stop input of this module merely keeps the C1 capacitor in a permanent discharged state as long as it is asserted.
+
+I just now discovered that there's a direct path between V+ and GND via Q3 and Q5 when the circuit is in the reset state - not good. The simulation says only 36 mA will flow though - that's only 180mW. But that is if one can trust the simulation to 100%. 
+
+I guess I have to come up with some better solution to the reset. I'd probably be better to hoo kQ5 directly up to C1 - I think my original thought was that I wanted to force the output transistor off directly with the reset, but that's probably not really necessary.
+
+
+### The bias generator
+
+The chain of ring counter modules needs two things to operate. A the clock pulse (which is merely a short interruption of the VCC supply current into the modules), and a adjustable bias voltage.
+
+The bias module is as simple as it gets - just a simple emitter follower controlled by a pot to adjust the voltage.
+
+In the schematics (from the LTspice simulations) below I replaced the pot with the two R1 & R2 transistors.
+
+![Schematics of the Bias generator](Images/Bias-Schematics.png?raw=true)
+
+Both the clockgen and the bias got fitted onto a single PCB without any issues.
+
+![DIYlc layout of the Clock & Bias PCB](Images/Clock_Bias-Layout.png?raw=true)
+
+Ending up in real life as this:
+
+![Clock & Bias PCB](Images/Clock_Bias-PCB.jpg?raw=true)
+
+The picture was taken before I changed the R1/R2 voltage divider into a pot to be able to tweak the bias voltage.
+
+### Ring counter
+
+Each step of the ring counter is rather easy. They are being based on on a discrete BJT version of the usual thyristor-based ring counters.
+
+The thyristors are build out of a tightly coupled NPN/PNP pair so they almost end up a 4-layer N/P device.
+
+![Single stage of the ring counter](Images/Ringcounter_Stage-Schematics.png?raw=true)
+
+The RI and RO connects from/to the previous/next stage by a 100nF capacitor. The STEP is the power supply with brief interruptions coming from the baudrate/clock generator.  Each dip in the power moved the active stage one step to the right.  It works almost by magic ;-)
+
+I hokked up three staked on the breadboard and connected the clock/bias PCB to it and the pulses shifted around beautifully just as planned.
+
+![Ring counter breadboard test](Images/Ringcounter-Breadboard.jpg?raw=true)
+
+Screenshot from the oscilloscope showing the incoming STEP pulses and the outputs from each of the three stages.
+
+![Oscilloscope screenshot of a three stage ring](Images/Ringcounter-Oscilloscope.png?raw=true)
+
+I did a quick layout with five stages on one of the usual PCBs - easy peasy.
+
+![DIYlc layout of a 5 stage ring PCB](Images/Ring-Layout.png?raw=true)
+ 
+
+ By some reason the soldering took a while to do and I might have fscked up something because it didn't behave properly at 5 volts. I got a lot of double pulses at the outputs or all just toggled in tandem.  Fiddling a bit with the bias voltage and raising the input voltage up to 12 made it better - but something is just simply wrong. 
+
+![DIYlc layout of a 5 stage ring PCB](Images/5stageRing-PCB.jpg?raw=true)
+
+I didn't have time last weekend (when I snuck a few hours to solder all of this up) to debug the issue further. I didn't even have time to make this blogpost back then.
+
+But tomorrow I'll spend some time to get to the bottom with this and also then solder up the second 5-stage ring counter.
+
+---
