@@ -193,9 +193,9 @@ The thyristors are build out of a tightly coupled NPN/PNP pair so they almost en
 
 ![Single stage of the ring counter](Images/Ringcounter_Stage-Schematics.png?raw=true)
 
-The RI and RO connects from/to the previous/next stage by a 100nF capacitor. The STEP is the power supply with brief interruptions coming from the baudrate/clock generator.  Each dip in the power moved the active stage one step to the right.  It works almost by magic ;-)
+The RI and RO connects from/to the previous/next stage by a 100nF capacitor. The STEP is the power supply with brief interruptions coming from the baudrate/clock generator.  Each dip in the power moves the active stage one step to the right.  It works almost by magic ;-)
 
-I hokked up three staked on the breadboard and connected the clock/bias PCB to it and the pulses shifted around beautifully just as planned.
+I hooked up three staked on the breadboard and connected the clock/bias PCB to it and the pulses shifted around beautifully just as planned.
 
 ![Ring counter breadboard test](Images/Ringcounter-Breadboard.jpg?raw=true)
 
