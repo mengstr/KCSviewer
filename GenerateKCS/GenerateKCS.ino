@@ -47,20 +47,32 @@ const uint8_t sine256[]  = {
 
 //const uint8_t bits[]  = {0, 1, 0, 0, 0, 0, 0, 0, 0};  // Short for testing the Audio->Serial pcb
 
-const uint8_t bits[]  = {           // For startbit detection
-  0,  1, 0, 1, 0, 1, 0, 1, 0,   1,
-  0,  0, 0, 0, 0, 0, 0, 0, 0,   1,
-  0,  1, 1, 1, 1, 1, 1, 1, 1,   1,
-  0,  1, 1, 1, 1, 1, 1, 1, 1,   1,1,1,1,1,
-  0,  1, 1, 1, 0, 0, 1, 1, 1,   1
+uint8_t bits[]  = {
+  //  0,    0, 1, 1, 1, 1, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 0, 1, 1, 1, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 0, 1, 1, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 0, 1, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 1, 0, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 1, 1, 0, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 1, 1, 1, 0, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 1, 1, 1, 1, 0,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 1, 1, 1, 0, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 1, 1, 0, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 1, 0, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 1, 0, 1, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 1, 0, 1, 1, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    1, 0, 1, 1, 1, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  //  0,    0, 1, 1, 1, 1, 1, 1, 1,   1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+  0,    0, 0, 0, 0, 0, 0, 0, 0,   1, 1,1,1,1,1,1
 };
 
-uint8_t sequencelength = sizeof(bits);
+uint16_t sequencelength = sizeof(bits);
 
 volatile uint16_t bitp = IDLE;
 
 #define PWMPIN 3
 #define BITPIN 2
+
 
 void setup() {
   Serial.begin(115200);
@@ -92,6 +104,19 @@ void setup() {
   // disable interrupts to avoid timing distortion
   cbi (TIMSK0, TOIE0);             // disable Timer0 aka delay()
   sbi (TIMSK2, TOIE2);             // enable Timer2 Interrupt
+
+
+//  pinMode (9, OUTPUT) ;
+//  pinMode (10, OUTPUT) ;
+//  TCCR1A = 0xE2 ;  // pins 9 and 10 in antiphase, mode 14 = fast 16 bit
+//  TCCR1B = 0x1A ;  // clock divide by 8
+//  ICR1  = 20000 - 1 ; // 20000 * 8 = 160000 clocks = 10ms
+//  OCR1A = 10000 - 1 ; // 50% duty cycle for pin 9
+//  OCR1B = 200 - 1 ;      // 1% duty cycle for pin 10
+//  TCNT1 = 0x0000 ;
+//
+//  pinMode (5, OUTPUT) ;
+//  pinMode (6, OUTPUT) ;
 }
 
 
@@ -102,16 +127,74 @@ void Delay1ms() {
   for (uint16_t j = 0; j < 2500; j++) __asm__ __volatile__ ("nop\n\t");
 }
 
+void wait() {
+  for (uint16_t i=0; i<200; i++) Delay1ms();
+}
+
+
+
+void Send1(uint8_t v) {
+  while (bitp != IDLE);
+  bits[1] = !(v & 0x01);
+  bits[2] = !(v & 0x02);
+  bits[3] = !(v & 0x04);
+  bits[4] = !(v & 0x08);
+  bits[5] = !(v & 0x10);
+  bits[6] = !(v & 0x20);
+  bits[7] = !(v & 0x40);
+  bits[8] = !(v & 0x80);
+  bitp = 0;
+}
+
+
+void Send(uint8_t v) {
+    for (uint16_t i=0; i<6; i++) Send1(v);
+    wait();
+}
+
 
 //
 //
 //
 void loop() {
-  while (bitp != IDLE);
-  digitalWrite(LED_BUILTIN, LOW);  
-  for (uint16_t i = 0; i < 1000; i++) Delay1ms();
-  bitp = 0;
-  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on 
+  digitalWrite(LED_BUILTIN, HIGH);   // turn the LED on
+Send(0x74); /* h */
+Send(0x79); /* E */
+Send(0x38); /* L */
+Send(0x38); /* L */
+Send(0x5C); /* o */
+Send(0x00);
+Send(0x50); /* r */
+Send(0x79); /* E */
+Send(0x78); /* T */
+Send(0x50); /* r */
+Send(0x5C); /* o */
+Send(0x58); /* c */
+Send(0x74); /* h */
+Send(0x77); /* A */
+Send(0x38); /* L */
+Send(0x38); /* L */
+Send(0x79); /* E */
+Send(0x54); /* n */
+Send(0x3D); /* G */
+Send(0x79); /* E */
+Send(0x00);
+Send(0x5B); /* 2 */
+Send(0x3F); /* 0 */
+Send(0x06); /* 1 */
+Send(0x7F); /* 8 */
+Send(0x40); /* - */
+Send(0x3F); /* 0 */
+Send(0x6F); /* 9 */
+Send(0x00);
+Send(0x00);
+Send(0x00);
+Send(0x00);
+Send(0x00);
+Send(0x00);
+
+  digitalWrite(LED_BUILTIN, LOW);   // turn the LED on
+  delay(500);
 }
 
 //

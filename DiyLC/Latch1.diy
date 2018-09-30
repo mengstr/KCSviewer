@@ -1,0 +1,3248 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<org.diylc.core.Project>
+  <fileVersion>
+    <major>3</major>
+    <minor>0</minor>
+    <build>0</build>
+  </fileVersion>
+  <title>New Project</title>
+  <author>mats</author>
+  <width>
+    <value>9.0</value>
+    <unit class="org.diylc.core.measures.SizeUnit">cm</unit>
+  </width>
+  <height>
+    <value>6.0</value>
+    <unit class="org.diylc.core.measures.SizeUnit">cm</unit>
+  </height>
+  <gridSpacing>
+    <value>0.1</value>
+    <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+  </gridSpacing>
+  <components>
+    <org.diylc.components.boards.PerfBoard>
+      <name>Board1</name>
+      <alpha>127</alpha>
+      <value></value>
+      <controlPoints>
+        <java.awt.Point x="0.5" y="0.2"/>
+        <java.awt.Point x="3.0" y="2.1"/>
+      </controlPoints>
+      <firstPoint x="0.5" y="0.2"/>
+      <secondPoint x="3.0" y="2.1"/>
+      <boardColor>
+        <red>248</red>
+        <green>235</green>
+        <blue>179</blue>
+        <alpha>255</alpha>
+      </boardColor>
+      <borderColor>
+        <red>173</red>
+        <green>164</green>
+        <blue>125</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <coordinateColor>
+        <red>182</red>
+        <green>182</green>
+        <blue>182</blue>
+        <alpha>255</alpha>
+      </coordinateColor>
+      <drawCoordinates>true</drawCoordinates>
+      <spacing>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </spacing>
+      <padColor>
+        <red>218</red>
+        <green>138</green>
+        <blue>103</blue>
+        <alpha>255</alpha>
+      </padColor>
+    </org.diylc.components.boards.PerfBoard>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace86</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.9" y="2.0"/>
+        <java.awt.Point x="0.6" y="2.0"/>
+      </points>
+      <bodyColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor reference="../borderColor"/>
+      <leadColor reference="../borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness>
+        <value>1.0</value>
+        <unit class="org.diylc.core.measures.SizeUnit">mm</unit>
+      </thickness>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace86</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.9" y="0.3"/>
+        <java.awt.Point x="0.6" y="0.3"/>
+      </points>
+      <bodyColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor reference="../borderColor"/>
+      <leadColor reference="../borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness>
+        <value>1.0</value>
+        <unit class="org.diylc.core.measures.SizeUnit">mm</unit>
+      </thickness>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace1</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.9" y="0.4"/>
+        <java.awt.Point x="0.9" y="0.5"/>
+      </points>
+      <bodyColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor reference="../borderColor"/>
+      <leadColor reference="../borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness>
+        <value>1.0</value>
+        <unit class="org.diylc.core.measures.SizeUnit">mm</unit>
+      </thickness>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace2</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.7" y="0.4"/>
+        <java.awt.Point x="0.7" y="0.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace3</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.7" y="0.7"/>
+        <java.awt.Point x="0.7" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace4</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.8" y="0.5"/>
+        <java.awt.Point x="0.8" y="0.3"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace5</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.8" y="0.8"/>
+        <java.awt.Point x="0.8" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace6</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.6" y="2.0"/>
+        <java.awt.Point x="0.6" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace7</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.0" y="0.9"/>
+        <java.awt.Point x="1.0" y="0.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace8</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.6" y="0.6"/>
+        <java.awt.Point x="1.0" y="0.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace9</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.6" y="0.6"/>
+        <java.awt.Point x="0.6" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace10</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.7" y="0.9"/>
+        <java.awt.Point x="0.7" y="1.0"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace11</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.0" y="1.0"/>
+        <java.awt.Point x="1.1" y="1.0"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace12</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.1" y="0.3"/>
+        <java.awt.Point x="1.1" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace13</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.1" y="1.0"/>
+        <java.awt.Point x="1.1" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace19</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.1" y="1.0"/>
+        <java.awt.Point x="1.1" y="1.7"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace20</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.8" y="1.7"/>
+        <java.awt.Point x="0.8" y="1.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace22</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.9" y="0.9"/>
+        <java.awt.Point x="0.9" y="0.8"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace23</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.7" y="1.7"/>
+        <java.awt.Point x="0.7" y="1.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace24</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.7" y="1.3"/>
+        <java.awt.Point x="0.7" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace25</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.0" y="1.5"/>
+        <java.awt.Point x="0.8" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace26</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.8" y="1.7"/>
+        <java.awt.Point x="0.8" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace27</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.0" y="1.9"/>
+        <java.awt.Point x="1.0" y="1.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace28</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.8" y="1.3"/>
+        <java.awt.Point x="0.8" y="1.4"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace21</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.7" y="1.3"/>
+        <java.awt.Point x="0.7" y="1.2"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace29</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.7" y="1.2"/>
+        <java.awt.Point x="0.7" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace30</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.8" y="0.9"/>
+        <java.awt.Point x="0.8" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace31</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.9" y="1.1"/>
+        <java.awt.Point x="0.8" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace32</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="0.9" y="1.2"/>
+        <java.awt.Point x="1.0" y="1.2"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[3]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace7</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.6" y="0.9"/>
+        <java.awt.Point x="1.6" y="0.6"/>
+      </points>
+      <bodyColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor reference="../borderColor"/>
+      <leadColor reference="../borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness>
+        <value>1.0</value>
+        <unit class="org.diylc.core.measures.SizeUnit">mm</unit>
+      </thickness>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace6</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.2" y="2.0"/>
+        <java.awt.Point x="1.2" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace24</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.3" y="1.3"/>
+        <java.awt.Point x="1.3" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace13</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.7" y="1.0"/>
+        <java.awt.Point x="1.7" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace26</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.4" y="1.7"/>
+        <java.awt.Point x="1.4" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace3</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.3" y="0.7"/>
+        <java.awt.Point x="1.3" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace32</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.5" y="1.2"/>
+        <java.awt.Point x="1.6" y="1.2"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace11</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.6" y="1.0"/>
+        <java.awt.Point x="1.7" y="1.0"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace20</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.4" y="1.7"/>
+        <java.awt.Point x="1.4" y="1.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace12</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.7" y="0.3"/>
+        <java.awt.Point x="1.7" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace5</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.4" y="0.8"/>
+        <java.awt.Point x="1.4" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace2</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.3" y="0.4"/>
+        <java.awt.Point x="1.3" y="0.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace8</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.2" y="0.6"/>
+        <java.awt.Point x="1.6" y="0.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace1</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.5" y="0.4"/>
+        <java.awt.Point x="1.5" y="0.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace30</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.4" y="0.9"/>
+        <java.awt.Point x="1.4" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace31</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.5" y="1.1"/>
+        <java.awt.Point x="1.4" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace28</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.4" y="1.3"/>
+        <java.awt.Point x="1.4" y="1.4"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace19</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.7" y="1.0"/>
+        <java.awt.Point x="1.7" y="1.7"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace29</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.3" y="1.2"/>
+        <java.awt.Point x="1.3" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace9</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.2" y="0.6"/>
+        <java.awt.Point x="1.2" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace25</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.6" y="1.5"/>
+        <java.awt.Point x="1.4" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace10</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.3" y="0.9"/>
+        <java.awt.Point x="1.3" y="1.0"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace21</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.3" y="1.3"/>
+        <java.awt.Point x="1.3" y="1.2"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace22</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.5" y="0.9"/>
+        <java.awt.Point x="1.5" y="0.8"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace23</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.3" y="1.7"/>
+        <java.awt.Point x="1.3" y="1.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace4</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.4" y="0.5"/>
+        <java.awt.Point x="1.4" y="0.3"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace27</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.6" y="1.9"/>
+        <java.awt.Point x="1.6" y="1.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[30]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[30]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace7</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.2" y="0.9"/>
+        <java.awt.Point x="2.2" y="0.6"/>
+      </points>
+      <bodyColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor reference="../borderColor"/>
+      <leadColor reference="../borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness>
+        <value>1.0</value>
+        <unit class="org.diylc.core.measures.SizeUnit">mm</unit>
+      </thickness>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace6</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.8" y="2.0"/>
+        <java.awt.Point x="1.8" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace24</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.9" y="1.3"/>
+        <java.awt.Point x="1.9" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace13</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.3" y="1.0"/>
+        <java.awt.Point x="2.3" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace26</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.0" y="1.7"/>
+        <java.awt.Point x="2.0" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace3</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.9" y="0.7"/>
+        <java.awt.Point x="1.9" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace32</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.1" y="1.2"/>
+        <java.awt.Point x="2.2" y="1.2"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace11</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.2" y="1.0"/>
+        <java.awt.Point x="2.3" y="1.0"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace20</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.0" y="1.7"/>
+        <java.awt.Point x="2.0" y="1.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace12</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.3" y="0.3"/>
+        <java.awt.Point x="2.3" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace5</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.0" y="0.8"/>
+        <java.awt.Point x="2.0" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace2</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.9" y="0.4"/>
+        <java.awt.Point x="1.9" y="0.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace8</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.8" y="0.6"/>
+        <java.awt.Point x="2.2" y="0.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace1</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.1" y="0.4"/>
+        <java.awt.Point x="2.1" y="0.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace30</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.0" y="0.9"/>
+        <java.awt.Point x="2.0" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace31</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.1" y="1.1"/>
+        <java.awt.Point x="2.0" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace28</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.0" y="1.3"/>
+        <java.awt.Point x="2.0" y="1.4"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace19</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.3" y="1.0"/>
+        <java.awt.Point x="2.3" y="1.7"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace29</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.9" y="1.2"/>
+        <java.awt.Point x="1.9" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace9</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.8" y="0.6"/>
+        <java.awt.Point x="1.8" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace25</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.2" y="1.5"/>
+        <java.awt.Point x="2.0" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace10</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.9" y="0.9"/>
+        <java.awt.Point x="1.9" y="1.0"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace21</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.9" y="1.3"/>
+        <java.awt.Point x="1.9" y="1.2"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace22</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.1" y="0.9"/>
+        <java.awt.Point x="2.1" y="0.8"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace23</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.9" y="1.7"/>
+        <java.awt.Point x="1.9" y="1.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace4</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.0" y="0.5"/>
+        <java.awt.Point x="2.0" y="0.3"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace27</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.2" y="1.9"/>
+        <java.awt.Point x="2.2" y="1.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[57]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[57]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace7</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.8" y="0.9"/>
+        <java.awt.Point x="2.8" y="0.6"/>
+      </points>
+      <bodyColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor reference="../borderColor"/>
+      <leadColor reference="../borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness>
+        <value>1.0</value>
+        <unit class="org.diylc.core.measures.SizeUnit">mm</unit>
+      </thickness>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace6</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.4" y="2.0"/>
+        <java.awt.Point x="2.4" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace24</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.5" y="1.3"/>
+        <java.awt.Point x="2.5" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace13</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.9" y="1.0"/>
+        <java.awt.Point x="2.9" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace26</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.6" y="1.7"/>
+        <java.awt.Point x="2.6" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace3</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.5" y="0.7"/>
+        <java.awt.Point x="2.5" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace32</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.7" y="1.2"/>
+        <java.awt.Point x="2.8" y="1.2"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace11</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.8" y="1.0"/>
+        <java.awt.Point x="2.9" y="1.0"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace20</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.6" y="1.7"/>
+        <java.awt.Point x="2.6" y="1.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace12</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.9" y="0.3"/>
+        <java.awt.Point x="2.9" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace5</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.6" y="0.8"/>
+        <java.awt.Point x="2.6" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace2</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.5" y="0.4"/>
+        <java.awt.Point x="2.5" y="0.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace8</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.4" y="0.6"/>
+        <java.awt.Point x="2.8" y="0.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace1</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.7" y="0.4"/>
+        <java.awt.Point x="2.7" y="0.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace30</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.6" y="0.9"/>
+        <java.awt.Point x="2.6" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace31</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.7" y="1.1"/>
+        <java.awt.Point x="2.6" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace28</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.6" y="1.3"/>
+        <java.awt.Point x="2.6" y="1.4"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace19</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.9" y="1.0"/>
+        <java.awt.Point x="2.9" y="1.7"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace29</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.5" y="1.2"/>
+        <java.awt.Point x="2.5" y="1.1"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace9</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.4" y="0.6"/>
+        <java.awt.Point x="2.4" y="0.9"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace25</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.8" y="1.5"/>
+        <java.awt.Point x="2.6" y="1.5"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace10</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.5" y="0.9"/>
+        <java.awt.Point x="2.5" y="1.0"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace21</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.5" y="1.3"/>
+        <java.awt.Point x="2.5" y="1.2"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace22</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.7" y="0.9"/>
+        <java.awt.Point x="2.7" y="0.8"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace23</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.5" y="1.7"/>
+        <java.awt.Point x="2.5" y="1.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace4</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.6" y="0.5"/>
+        <java.awt.Point x="2.6" y="0.3"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.CopperTrace>
+      <name>Trace27</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="2.8" y="1.9"/>
+        <java.awt.Point x="2.8" y="1.6"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <leadColor reference="../../org.diylc.components.connectivity.CopperTrace[84]/borderColor"/>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <thickness reference="../../org.diylc.components.connectivity.CopperTrace[84]/thickness"/>
+      <layer>_1</layer>
+    </org.diylc.components.connectivity.CopperTrace>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="0.6" y="0.3"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.9" y="0.3"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.9" y="2.0"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="0.6" y="2.0"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="0.7" y="0.4"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="0.9" y="0.4"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="0.8" y="1.9"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="1.0" y="1.9"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="1.0" y="1.2"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="1.5" y="0.4"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="1.6" y="1.9"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="1.3" y="0.4"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="1.6" y="1.2"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="1.4" y="1.9"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.1" y="0.4"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.2" y="1.9"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="1.9" y="0.4"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.2" y="1.2"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.0" y="1.9"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.7" y="0.4"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.8" y="1.9"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.5" y="0.4"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.8" y="1.2"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.Eyelet>
+      <name>Eyelet1</name>
+      <size>
+        <value>0.12</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </size>
+      <holeSize>
+        <value>0.05</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </holeSize>
+      <color>
+        <red>195</red>
+        <green>228</green>
+        <blue>237</blue>
+        <alpha>255</alpha>
+      </color>
+      <point x="2.6" y="1.9"/>
+      <value></value>
+    </org.diylc.components.connectivity.Eyelet>
+    <org.diylc.components.connectivity.HookupWire>
+      <name>W1</name>
+      <alpha>127</alpha>
+      <controlPoints>
+        <java.awt.Point x="0.1" y="0.2"/>
+        <java.awt.Point x="0.4" y="0.1"/>
+        <java.awt.Point x="0.6" y="0.2"/>
+        <java.awt.Point x="0.6" y="0.3"/>
+      </controlPoints>
+      <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </color>
+      <pointCount>FOUR</pointCount>
+      <gauge>_22</gauge>
+    </org.diylc.components.connectivity.HookupWire>
+    <org.diylc.components.connectivity.HookupWire>
+      <name>W2</name>
+      <alpha>127</alpha>
+      <controlPoints>
+        <java.awt.Point x="2.9" y="2.0"/>
+        <java.awt.Point x="3.1" y="2.1"/>
+        <java.awt.Point x="3.3" y="2.0"/>
+        <java.awt.Point x="3.3" y="2.0"/>
+      </controlPoints>
+      <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </color>
+      <pointCount>FOUR</pointCount>
+      <gauge>_22</gauge>
+    </org.diylc.components.connectivity.HookupWire>
+    <org.diylc.components.connectivity.HookupWire>
+      <name>W2</name>
+      <alpha>127</alpha>
+      <controlPoints>
+        <java.awt.Point x="2.9" y="0.3"/>
+        <java.awt.Point x="3.1" y="0.2"/>
+        <java.awt.Point x="3.1" y="0.3"/>
+        <java.awt.Point x="3.4" y="0.2"/>
+      </controlPoints>
+      <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </color>
+      <pointCount>FOUR</pointCount>
+      <gauge>_22</gauge>
+    </org.diylc.components.connectivity.HookupWire>
+    <org.diylc.components.connectivity.HookupWire>
+      <name>W1</name>
+      <alpha>127</alpha>
+      <controlPoints>
+        <java.awt.Point x="0.1" y="1.9"/>
+        <java.awt.Point x="0.4" y="2.0"/>
+        <java.awt.Point x="0.6" y="1.9"/>
+        <java.awt.Point x="0.6" y="2.0"/>
+      </controlPoints>
+      <color>
+        <red>0</red>
+        <green>255</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </color>
+      <pointCount>FOUR</pointCount>
+      <gauge>_22</gauge>
+    </org.diylc.components.connectivity.HookupWire>
+    <org.diylc.components.passive.Resistor>
+      <name>R13</name>
+      <alpha>76</alpha>
+      <length>
+        <value>0.3</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="0.9" y="0.8"/>
+        <java.awt.Point x="0.9" y="0.5"/>
+      </points>
+      <bodyColor>
+        <red>130</red>
+        <green>207</green>
+        <blue>253</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>91</red>
+        <green>144</green>
+        <blue>177</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <power>HALF</power>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </org.diylc.components.passive.Resistor>
+    <org.diylc.components.semiconductors.TransistorTO92>
+      <name>Q5</name>
+      <alpha>68</alpha>
+      <value></value>
+      <orientation>_90</orientation>
+      <controlPoints>
+        <java.awt.Point x="0.8" y="0.9"/>
+        <java.awt.Point x="0.7" y="0.9"/>
+        <java.awt.Point x="0.6" y="0.9"/>
+      </controlPoints>
+      <bodyColor>
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>89</red>
+        <green>89</green>
+        <blue>89</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <display>NAME</display>
+      <folded>false</folded>
+      <pinSpacing>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </pinSpacing>
+    </org.diylc.components.semiconductors.TransistorTO92>
+    <org.diylc.components.semiconductors.TransistorTO92>
+      <name>Q6</name>
+      <alpha>68</alpha>
+      <value></value>
+      <orientation>_270</orientation>
+      <controlPoints>
+        <java.awt.Point x="0.8" y="0.9"/>
+        <java.awt.Point x="0.9" y="0.9"/>
+        <java.awt.Point x="1.0" y="0.9"/>
+      </controlPoints>
+      <bodyColor>
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>89</red>
+        <green>89</green>
+        <blue>89</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <display>NAME</display>
+      <folded>false</folded>
+      <pinSpacing>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </pinSpacing>
+    </org.diylc.components.semiconductors.TransistorTO92>
+    <org.diylc.components.passive.RadialCeramicDiskCapacitor>
+      <name>C4</name>
+      <alpha>127</alpha>
+      <length>
+        <value>0.25</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.125</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="0.7" y="0.5"/>
+        <java.awt.Point x="0.7" y="0.7"/>
+      </points>
+      <bodyColor>
+        <red>240</red>
+        <green>230</green>
+        <blue>140</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>168</red>
+        <green>161</green>
+        <blue>98</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <pinSpacing>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </pinSpacing>
+      <voltage>_63V</voltage>
+    </org.diylc.components.passive.RadialCeramicDiskCapacitor>
+    <org.diylc.components.passive.Resistor>
+      <name>R14</name>
+      <alpha>76</alpha>
+      <length>
+        <value>0.3</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="1.0" y="1.6"/>
+        <java.awt.Point x="0.7" y="1.6"/>
+      </points>
+      <bodyColor>
+        <red>130</red>
+        <green>207</green>
+        <blue>253</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>91</red>
+        <green>144</green>
+        <blue>177</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <power>HALF</power>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </org.diylc.components.passive.Resistor>
+    <org.diylc.components.passive.Resistor>
+      <name>R6</name>
+      <alpha>76</alpha>
+      <length>
+        <value>0.3</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="0.8" y="0.8"/>
+        <java.awt.Point x="0.8" y="0.5"/>
+      </points>
+      <bodyColor>
+        <red>130</red>
+        <green>207</green>
+        <blue>253</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>91</red>
+        <green>144</green>
+        <blue>177</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <power>HALF</power>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </org.diylc.components.passive.Resistor>
+    <org.diylc.components.passive.Resistor>
+      <name>R4</name>
+      <alpha>76</alpha>
+      <length>
+        <value>0.3</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="1.0" y="1.0"/>
+        <java.awt.Point x="0.7" y="1.0"/>
+      </points>
+      <bodyColor>
+        <red>130</red>
+        <green>207</green>
+        <blue>253</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>91</red>
+        <green>144</green>
+        <blue>177</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <power>HALF</power>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </org.diylc.components.passive.Resistor>
+    <org.diylc.components.semiconductors.TransistorTO92>
+      <name>Q8</name>
+      <alpha>68</alpha>
+      <value></value>
+      <orientation>_90</orientation>
+      <controlPoints>
+        <java.awt.Point x="0.8" y="1.7"/>
+        <java.awt.Point x="0.7" y="1.7"/>
+        <java.awt.Point x="0.6" y="1.7"/>
+      </controlPoints>
+      <bodyColor>
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>89</red>
+        <green>89</green>
+        <blue>89</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <display>NAME</display>
+      <folded>false</folded>
+      <pinSpacing>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </pinSpacing>
+    </org.diylc.components.semiconductors.TransistorTO92>
+    <org.diylc.components.semiconductors.TransistorTO92>
+      <name>Q7</name>
+      <alpha>68</alpha>
+      <value></value>
+      <orientation>_90</orientation>
+      <controlPoints>
+        <java.awt.Point x="0.8" y="1.3"/>
+        <java.awt.Point x="0.7" y="1.3"/>
+        <java.awt.Point x="0.6" y="1.3"/>
+      </controlPoints>
+      <bodyColor>
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>89</red>
+        <green>89</green>
+        <blue>89</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <display>NAME</display>
+      <folded>false</folded>
+      <pinSpacing>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </pinSpacing>
+    </org.diylc.components.semiconductors.TransistorTO92>
+    <org.diylc.components.passive.Resistor>
+      <name>R8</name>
+      <alpha>76</alpha>
+      <length>
+        <value>0.3</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="1.1" y="1.3"/>
+        <java.awt.Point x="0.8" y="1.3"/>
+      </points>
+      <bodyColor>
+        <red>130</red>
+        <green>207</green>
+        <blue>253</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>91</red>
+        <green>144</green>
+        <blue>177</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <power>HALF</power>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </org.diylc.components.passive.Resistor>
+    <org.diylc.components.passive.Resistor>
+      <name>R12</name>
+      <alpha>76</alpha>
+      <length>
+        <value>0.3</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="1.1" y="1.7"/>
+        <java.awt.Point x="0.8" y="1.7"/>
+      </points>
+      <bodyColor>
+        <red>130</red>
+        <green>207</green>
+        <blue>253</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>91</red>
+        <green>144</green>
+        <blue>177</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <power>HALF</power>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </org.diylc.components.passive.Resistor>
+    <org.diylc.components.passive.Resistor>
+      <name>R15</name>
+      <alpha>76</alpha>
+      <length>
+        <value>0.3</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.1</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="1.0" y="1.5"/>
+        <java.awt.Point x="0.7" y="1.5"/>
+      </points>
+      <bodyColor>
+        <red>130</red>
+        <green>207</green>
+        <blue>253</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>91</red>
+        <green>144</green>
+        <blue>177</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <power>HALF</power>
+      <colorCode>_5_BAND</colorCode>
+      <shape>Standard</shape>
+    </org.diylc.components.passive.Resistor>
+    <org.diylc.components.connectivity.Jumper>
+      <name>J1</name>
+      <alpha>127</alpha>
+      <points>
+        <java.awt.Point x="1.0" y="1.6"/>
+        <java.awt.Point x="0.8" y="1.4"/>
+      </points>
+      <bodyColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/bodyColor"/>
+      <borderColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <labelColor reference="../../org.diylc.components.connectivity.CopperTrace[3]/borderColor"/>
+      <leadColor>
+        <red>0</red>
+        <green>0</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+    </org.diylc.components.connectivity.Jumper>
+    <org.diylc.components.semiconductors.DiodeGlass>
+      <name>D1</name>
+      <alpha>127</alpha>
+      <length>
+        <value>0.2</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.09</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="0.7" y="1.2"/>
+        <java.awt.Point x="0.9" y="1.2"/>
+      </points>
+      <bodyColor>
+        <red>225</red>
+        <green>240</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <value></value>
+      <markerColor reference="../borderColor"/>
+      <insideColor>
+        <red>230</red>
+        <green>110</green>
+        <blue>49</blue>
+        <alpha>255</alpha>
+      </insideColor>
+    </org.diylc.components.semiconductors.DiodeGlass>
+    <org.diylc.components.semiconductors.DiodeGlass>
+      <name>D3</name>
+      <alpha>127</alpha>
+      <length>
+        <value>0.2</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </length>
+      <width>
+        <value>0.09</value>
+        <unit class="org.diylc.core.measures.SizeUnit">in</unit>
+      </width>
+      <points>
+        <java.awt.Point x="0.9" y="1.1"/>
+        <java.awt.Point x="0.7" y="1.1"/>
+      </points>
+      <bodyColor>
+        <red>225</red>
+        <green>240</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </bodyColor>
+      <borderColor>
+        <red>128</red>
+        <green>128</green>
+        <blue>128</blue>
+        <alpha>255</alpha>
+      </borderColor>
+      <labelColor>
+        <red>255</red>
+        <green>255</green>
+        <blue>255</blue>
+        <alpha>255</alpha>
+      </labelColor>
+      <leadColor>
+        <red>204</red>
+        <green>204</green>
+        <blue>204</blue>
+        <alpha>255</alpha>
+      </leadColor>
+      <display>NAME</display>
+      <flipStanding>false</flipStanding>
+      <value></value>
+      <markerColor reference="../borderColor"/>
+      <insideColor>
+        <red>230</red>
+        <green>110</green>
+        <blue>49</blue>
+        <alpha>255</alpha>
+      </insideColor>
+    </org.diylc.components.semiconductors.DiodeGlass>
+    <org.diylc.components.misc.Label>
+      <name>L1</name>
+      <point x="0.4" y="0.3"/>
+      <text>VCC</text>
+      <font>
+        <attributes>
+          <entry>
+            <awt-text-attribute>size</awt-text-attribute>
+            <float>14.0</float>
+          </entry>
+          <entry>
+            <awt-text-attribute>posture</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>tracking</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>width</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>weight</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>superscript</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>transform</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>family</awt-text-attribute>
+            <string>Tahoma</string>
+          </entry>
+        </attributes>
+      </font>
+      <color reference="../../org.diylc.components.connectivity.CopperTrace/borderColor"/>
+      <center>false</center>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </org.diylc.components.misc.Label>
+    <org.diylc.components.misc.Label>
+      <name>L4</name>
+      <point x="3.1" y="2.1"/>
+      <text>GND</text>
+      <font reference="../../org.diylc.components.misc.Label/font"/>
+      <color reference="../../org.diylc.components.connectivity.CopperTrace/borderColor"/>
+      <center>false</center>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </org.diylc.components.misc.Label>
+    <org.diylc.components.misc.Label>
+      <name>L1</name>
+      <point x="3.2" y="0.2"/>
+      <text>VCC</text>
+      <font>
+        <attributes>
+          <entry>
+            <awt-text-attribute>size</awt-text-attribute>
+            <float>14.0</float>
+          </entry>
+          <entry>
+            <awt-text-attribute>posture</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>tracking</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>width</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>weight</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>superscript</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>transform</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>family</awt-text-attribute>
+            <string>Tahoma</string>
+          </entry>
+        </attributes>
+      </font>
+      <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </color>
+      <center>false</center>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </org.diylc.components.misc.Label>
+    <org.diylc.components.misc.Label>
+      <name>L4</name>
+      <point x="0.3" y="2.1"/>
+      <text>GND</text>
+      <font>
+        <attributes>
+          <entry>
+            <awt-text-attribute>size</awt-text-attribute>
+            <float>14.0</float>
+          </entry>
+          <entry>
+            <awt-text-attribute>posture</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>tracking</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>width</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>weight</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>superscript</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>transform</awt-text-attribute>
+            <null/>
+          </entry>
+          <entry>
+            <awt-text-attribute>family</awt-text-attribute>
+            <string>Tahoma</string>
+          </entry>
+        </attributes>
+      </font>
+      <color>
+        <red>0</red>
+        <green>0</green>
+        <blue>0</blue>
+        <alpha>255</alpha>
+      </color>
+      <center>false</center>
+      <horizontalAlignment>CENTER</horizontalAlignment>
+      <verticalAlignment>CENTER</verticalAlignment>
+      <orientation>DEFAULT</orientation>
+    </org.diylc.components.misc.Label>
+  </components>
+  <groups>
+    <set/>
+  </groups>
+  <lockedLayers>
+    <int>2</int>
+  </lockedLayers>
+  <hiddenLayers/>
+  <font>
+    <attributes>
+      <entry>
+        <awt-text-attribute>size</awt-text-attribute>
+        <float>14.0</float>
+      </entry>
+      <entry>
+        <awt-text-attribute>posture</awt-text-attribute>
+        <null/>
+      </entry>
+      <entry>
+        <awt-text-attribute>tracking</awt-text-attribute>
+        <null/>
+      </entry>
+      <entry>
+        <awt-text-attribute>width</awt-text-attribute>
+        <null/>
+      </entry>
+      <entry>
+        <awt-text-attribute>weight</awt-text-attribute>
+        <null/>
+      </entry>
+      <entry>
+        <awt-text-attribute>superscript</awt-text-attribute>
+        <null/>
+      </entry>
+      <entry>
+        <awt-text-attribute>transform</awt-text-attribute>
+        <null/>
+      </entry>
+      <entry>
+        <awt-text-attribute>family</awt-text-attribute>
+        <string>Tahoma</string>
+      </entry>
+    </attributes>
+  </font>
+</org.diylc.core.Project>
