@@ -210,22 +210,162 @@ I did a quick layout with five stages on one of the usual PCBs - easy peasy.
 
  By some reason the soldering took a while to do and I might have fscked up something because it didn't behave properly at 5 volts. I got a lot of double pulses at the outputs or all just toggled in tandem.  Fiddling a bit with the bias voltage and raising the input voltage up to 12 made it better - but something is just simply wrong. 
 
-![DIYlc layout of a 5 stage ring PCB](Images/5stageRing-PCB.jpg?raw=true)
+![The 5 stage ring counter PCB](Images/5stageRing-PCB.jpg?raw=true)
 
 I didn't have time last weekend (when I snuck a few hours to solder all of this up) to debug the issue further. I didn't even have time to make this blogpost back then.
 
 But tomorrow I'll spend some time to get to the bottom with this and also then solder up the second 5-stage ring counter.
 
 ---
+## Sep 22 - Debugging the ring counter
+
+Well, it actually seems like there wasn't any real problem with it after all. It turns out that if I connect the scope probes while it is running some extra pulses will be injected into the loop.
+
+![...](Images/DoublePulses.png?raw=true)
+
+After discovering this I built the second ring counter PCB and hooked it up to the 300Hz generator PCB.
+
+![...](Images/TwoRingcounters.jpg?raw=true)
+
+Initially I forgot to link the output of the second board back to the first which of course made it not-working. But after a nice cup of coffee I realized this fsckup.  After attaching one more green alligator wire a single pulse walked around the ring just as it should.
+
+--
+## Sep 24 - mono & s/r flops
+
+### Monoflop for delaying the first bit
+
+Each byte in the serial bit stream have a initial zero-startbit, this startbit is used to startup the 300Hz clock generator. But we really can't have it start the clock at the leading edge of the pulse, we must wait for 1.5 bit times so we're in the middle of the first data bit.  Then we can sample that bit immediately. Then at the next tick of the clock we're in the middle of the next bit.
+
+![...](Images/Startbit_delayer-schematics.png?raw=true)
+![...](Images/startbit_monoflop-schematics.png?raw=true)
+
+There's not many parts for this PCB so it's really sparse and easy to solder up.
+
+![...](Images/StartbitDelay.jpg?raw=true)
+
+The input of the monoflop is edge-triggered and the output is also routed through a pulse shortener. So even if I give it a long input pulse I get a short outgoing pulse after the designated delay.
+
+![...](Images/startbit-delay.png?raw=true)
+
+Ok, this seems to work as intended. Onwards to the next module.
+
+### S/R FlipFlop
+
+Next up is the Set/Reset flipclop that is set by the delayed startbit and then reset again by the last output of the ringcounter.  This flipflop is controlling whether the 300Hz clock generator is running or not.
+
+This is also a very simple PCB ans was very quick to solder up and test.  I'm really happy to have a four channel oscilloscope, it makes testing of stuff like this so much easier.
+
+![...](Images/SR_FlipFlop-schematics.png?raw=true)
+
+The S/R Flipflop hooked up to the oscilloscope and the arduino that generates the test signals.
+
+![...](Images/SR_FlipFlop-Test.jpg?raw=true)
+Oh yes, it is flipping and flopping as expected.
+
+![...](Images/SR-test.png?raw=true)
+
+### A bit of a problem
+So with the clock generator, the delayer, the flopflop and the full ring counter PCBs done and tested individually it was time to connect them and test them together.
+
+But by some reason the 3.9 ms monoflop didn't act like a monoflop, it did continously cycle acting like a astable. Even if I grounded the trigger input it still just oscillated.
+
+After much head-scratching and beard-pulling I realized that the clock generator did inject enough hash on the power rail to retrigger the edge detector in the monoflop.
+
+![...](Images/vcc-before.png?raw=true)
+
+The blue line shows the VCC line up at the monostable. There's about 120mV dips in the power each time the ring counter advances.
+
+So I hooked up a 100uF cap across the rail close to the power stage in the ring counter oscillator.
+
+![...](Images/vcc-after.png?raw=true)
+
+The hash didn't go away completely, but it got reduced to about 50mV which is low enough to not disturb the monoflop.
+
+Good enough for the time being, but I probably should have both a small bulk and decoupling at each module and possibly also make a star power&ground distribution.  If I ever make this into a kit I definitely will have to do that.  Can't have shitty power for paying customers ;-)
 
 ---
-Sep 30 - The video
+
+## Sep 27 - latches
+
+In my original design I did some elaborate DTL NAND logic latches, but I now realized that that was too many parts to fit onto the small PCBs. I would have had to use at least four PCBs for it.
+
+I did a redesign and came up with something simpler.  Each latch have two inputs.  One shared line connected to the SERIAL output from the first PCB and then a edge triggered input that is connected to the outputs of each stage in the ring counter.
+
+So the latch stores the value of the serial line when triggered by the ring counter outputs.
+
+This is how the new latch looks.  Easy-peasy I thought - it will be a piece of cake to fit four of those on each PCB.
+
+![...](Images/Latch1-schematics.png?raw=true)
+
+Well, it turned out to be a bit cramped. I had to resort ugly things like putting the legs of two components into the same hole and using horizontal buses above the parts as well.  But ok, why not as long as it works. This isn't a beauty contest...
+
+![...](Images/QuadLatch-PCB.jpg?raw=true)
+
+Time for some full integration testing of the entire system. Some conenction points have soldered wires and some are still with alligator clips.  It kinda worked, but the ring counter was very finicky and didn't really want step properly. 
+
+![...](Images/IntegrationTesting.jpg?raw=true)
+
+It turned out that the pulse-shortening input stage of the latches loaded down the unbuffered outputs at the ring counter stages. So I had to patch on a thin extra PCB between the ring counter pcb and the latch pcb.  
+
+At the same time I had to change the output on the ring counters from Q to /Q since the buffer pcb did invert the signals.  That was easy enough since I had both outputs next to each other on the pcb. 
+
+![...](Images/LatchWbuffer-pcb.jpg?raw=true)
+
+After this it worked just fine - at least with using the pwm-sine output from the Arduino.
+
+### Tape recorder
+
+Tape recorders seems to be a thing of the past. Even CD players seems to be a bit past their prime today. I've been looking for a 70's style small mono tape recorder for a while now and found one for just $10 in a second-hand shop near me. 
+
+The reason for being so cheap was that it did't output any sound, but the mechanics seemed ok so I bought it in the hopes of being able to easily fix it.  It turned out that it just contained a single single-in-line IC that handled both the pre-amplifier form the head as well as the power amplifier for the built-in speaker.  It was hot to touch and dead.  I ordered a replacement for it from ebay, but it hasn't arrived yet.
+
+Luckily a friend that I told that I was looking for a tape recorder found one in her recycling garbage room in her building and grabbed it for me.
+
+It turned out to be a new fully working device for transferring old tapes to a computer via USB. It even had a cassette tape with 70's disco music on it. Nice!
+
+![...](Images/tape.jpg?raw=true)
+
+
+So I hooked up the arduino and recorded a minute of sound from it.  Switched over the audio cables to my project and hit the play button.
+
+IT WORKS!  No problems whatsoever.
+
+At this time I only had a couple of LEDs loosely patched into the outputs of the latches and it was past midnight. Better fix the rest of the things tomorrow. I'm happy enough as it is.
+
+---
+
+## Sep 29 - Final touches
+
+With the deadline looming just around the corner I'd better finish up the last things.
+
+### The case of the missing display
+
+By some reason I didn't have any single-digit seven segment displays in by box of displays, but I'm the happy owner of a Zortrax M200 so I spent 20 minutes in Fusion followed by 40 minutes of printing a holder for fourteen 3mm LEDs to make my own display.
+![...](Images/3d-display-cad.png?raw=true)
+
+![...](Images/3Ddisplay-1.jpg?raw=true)
+![...](Images/3Ddisplay-2.jpg?raw=true)
+
+### Mounting
+
+Of course I had to replace all loose wire and alligator clips with some real wiring and also tack the PCBs neatly down with double sided tape onto a piece of acrylics. I didn't bother to remove the protective plastic film from the acrylic - hence the pink tint of it.
+
+I used hot glue to fill the segment slots in the, but it turned out to be yet another thing hotsnot is not a good match for.  It looks totally horrible and it doesn't diffuse the LEDs particulary well, but that's what I got for now.
+
+![...](Images/AllHookedUp.jpg?raw=true)
+---
+
+
+
+
+## Sep 30 - The video
 
 Here's a video of the (almost) full circuit in action.  I have recorded the message HELLO RETROCHALLENGE 2018-09 on the tape and is playing it back. Since the design currently lack the final latch I've encoded each character multiple times to keep the display more or less for enough time to see each character.
 
 [![Alt text](https://img.youtube.com/vi/Zs1BC_5-5ak/0.jpg)](https://www.youtube.com/watch?v=Zs1BC_5-5ak)
 
+[ Click the image to play the video at YouTube ]
+
 I'll probably will make two more cards with the missing final latch so I can hook up a HD44780 display and show a message in a more readable way, but I really think that this is good enough to show that it is not that hard to make reasonably complex stuff with only transistors.
 
 I must admit that I'm slightly amazed that my original design made on paper and LTspice from two years back actually works and also that I had the time to pull it off during this short month.
- 
