@@ -197,7 +197,7 @@ The RI and RO connects from/to the previous/next stage by a 100nF capacitor. The
 
 I hooked up three staked on the breadboard and connected the clock/bias PCB to it and the pulses shifted around beautifully just as planned.
 
-![Ring counter breadboard test](Images/Ringcounter-Breadboard.jpg?raw=true)
+![Ring counter breadboard test](Images/RingCounter-Breadboard.jpg?raw=true)
 
 Screenshot from the oscilloscope showing the incoming STEP pulses and the outputs from each of the three stages.
 
