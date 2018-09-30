@@ -217,3 +217,15 @@ I didn't have time last weekend (when I snuck a few hours to solder all of this 
 But tomorrow I'll spend some time to get to the bottom with this and also then solder up the second 5-stage ring counter.
 
 ---
+
+---
+Sep 30 - The video
+
+Here's a video of the (almost) full circuit in action.  I have recorded the message HELLO RETROCHALLENGE 2018-09 on the tape and is playing it back. Since the design currently lack the final latch I've encoded each character multiple times to keep the display more or less for enough time to see each character.
+
+[![Alt text](https://img.youtube.com/vi/Zs1BC_5-5ak/0.jpg)](https://www.youtube.com/watch?v=Zs1BC_5-5ak)
+
+I'll probably will make two more cards with the missing final latch so I can hook up a HD44780 display and show a message in a more readable way, but I really think that this is good enough to show that it is not that hard to make reasonably complex stuff with only transistors.
+
+I must admit that I'm slightly amazed that my original design made on paper and LTspice from two years back actually works and also that I had the time to pull it off during this short month.
+ 
