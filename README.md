@@ -4,8 +4,6 @@
 
 The entries/blog here will be kept in chronological order with the newest post at the bottom.
 
-[![HitCount](http://hits.dwyl.io/SmallRoomLabs/KCSviewer.svg)](http://hits.dwyl.io/SmallRoomLabs/KCSviewer)
-
 ---
 
 ## Sep 01 - Intro
